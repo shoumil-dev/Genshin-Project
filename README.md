@@ -1,2 +1,2 @@
-You Can Visit the Site at:
+You can visit the site at:
 https://shoumil-dev.github.io/genshin_project/
