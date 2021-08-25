@@ -1,0 +1,60 @@
+.center {
+  margin: auto;
+    width: 50%;
+}
+
+
+#appearance {
+  display : none;
+}
+
+#story {
+  display : none;
+}
+
+.topbanner{
+  width:100vw;
+  height:700px;
+}
+
+.centerall {
+  text-align: center;
+
+}
+
+.marginbody {
+  margin-right: 100px;
+  margin-left: 100px;
+  margin-bottom: 150px;
+}
+
+.textbody {
+  font-size :120%;
+}
+
+
+@media all and (max-width: 600px) {                           /* https://stackoverflow.com/a/38572502 */
+  input[type="checkbox"] {
+    width: 25px;
+    height: 25px;
+  }
+}
+
+@media all and (max-width: 320px) {
+  input[type="checkbox"] {
+    width: 40px;
+    height: 40px;
+  }
+}
+
+.titlehead {
+  text-align: center;
+  font-size:275%;
+
+
+}
+
+body {
+  font-family:Georgia;
+}
+

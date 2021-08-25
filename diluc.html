@@ -1,0 +1,77 @@
+<!DOCTYPE html>
+<html lang="en">
+	<head>
+		<link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap@4.5.3/dist/css/bootstrap.min.css" integrity="sha384-TX8t27EcRE3e/ihU7zmQxVncDAy5uIKz4rEkgIXeMed4M0jlfIDPvg6uqKI2xXr2" crossorigin="anonymous">
+		<script src="https://code.jquery.com/jquery-3.5.1.slim.min.js" integrity="sha384-DfXdz2htPH0lsSSs5nCTpuj/zy4C+OGpamoFVy38MVBnE+IbbVYUew+OrCXaRkfj" crossorigin="anonymous"></script>
+		<script src="https://cdn.jsdelivr.net/npm/bootstrap@4.5.3/dist/js/bootstrap.bundle.min.js" integrity="sha384-ho+j7jyWK8fNQe+A12Hb8AhRq26LrZ/JpcUGGOn+Y7RsweNrtN/tE3MoK7ZeZDyx" crossorigin="anonymous"></script>
+		<link href="styles.css" rel="stylesheet">
+		<title>My Webpage</title>
+	</head>
+	<body>
+		<nav class="navbar navbar-expand-lg navbar-light bg-light">
+			<button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarNavAltMarkup" aria-controls="navbarNavAltMarkup" aria-expanded="false" aria-label="Toggle navigation">
+				<span class="navbar-toggler-icon"></span>
+			</button>
+			<div class="collapse navbar-collapse" id="navbarNavAltMarkup">
+				<div class="navbar-nav">
+					<a class="nav-link active" href="index.html">Homepage <span class="sr-only">(current)</span>
+					</a>
+					<a class="nav-link" href="traveler.html">Traveler</a>
+					<a class="nav-link" href="kaeya.html">Kaeya</a>
+					<a class="nav-link" href="amber.html">Amber</a>
+					<a class="nav-link" href="diluc.html">Diluc</a>
+				</div>
+			</div>
+		</nav>
+		<img src="dilucpage.jpeg" class="topbanner" alt="Responsive image">
+		<br>
+		<br>
+		<p class='titlehead'>Diluc</p>
+		<div class='centerall marginbody textbody'> Appearance: <input type="checkbox" id="myCheck" class='checkboxsize'> Story: <input type="checkbox" id="myCheck1" class='checkboxsize'>
+			<hr>
+			<br>
+			<script>
+				document.addEventListener('DOMContentLoaded', function() {
+					document.addEventListener('click', function() {
+						// Get the checkbox
+						var checkBox = document.getElementById("myCheck");
+						// Get the output text
+						var text = document.getElementById("appearance");
+						// If the checkbox is checked, display the output text
+						if (checkBox.checked === true) {
+							text.style.display = "block";
+						} else {
+							text.style.display = "none";
+						}
+					});
+				});
+			</script>
+			<p id='appearance'>Diluc is a tall and slender man with pale skin, red eyes and bright red hair, worn in a low ponytail that extends to his mid-back. His expression usually makes him appear stern, exasperated or unimpressed.  <br>
+				<br> Diluc wears a black dress shirt, a long white vest, and a black ascot with a red gem. Over this he dons a dark brown coat with golden trimmings and tassels, ending with black fur-trims. He wears black pants which are embellished with chains on his right thigh, while his Vision, attached to a belt, is settled upon his left thigh. Diluc also wears cuffed, dark brown boots held by multiple buckles, and a pair of black gloves which he has a habit of adjusting. Their palm sides are all red while the backs are black with a matching red diamond pattern. His outfit, Darknight Blaze, is described to be a smart and tasteful suit fit for a nobleman.
+			</p>
+			<br>
+			<br>
+			<script>
+				document.addEventListener('DOMContentLoaded', function() {
+					document.addEventListener('click', function() {
+						// Get the checkbox
+						var checkBox = document.getElementById("myCheck1");
+						// Get the output text
+						var text = document.getElementById("story");
+						// If the checkbox is checked, display the output text
+						if (checkBox.checked === true) {
+							text.style.display = "block";
+						} else {
+							text.style.display = "none";
+						}
+					});
+				});
+			</script>
+			<p id='story'>As the city of ballads and wines, Mondstadt's alcohol industry is renowned all over Teyvat.
+
+                <br>As the owner of the Dawn Winery, Diluc is essentially in charge of the industry. This means he has a huge stream of revenue and an entire network of information in the form of tavern patrons' gossip right at his fingertips.
+                <br>In a way, he is the uncrowned king of Mondstadt.
+			</p>
+		</div>
+	</body>
+</html>

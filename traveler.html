@@ -1,0 +1,75 @@
+<!DOCTYPE html>
+<html lang="en">
+	<head>
+		<link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap@4.5.3/dist/css/bootstrap.min.css" integrity="sha384-TX8t27EcRE3e/ihU7zmQxVncDAy5uIKz4rEkgIXeMed4M0jlfIDPvg6uqKI2xXr2" crossorigin="anonymous">
+		<script src="https://code.jquery.com/jquery-3.5.1.slim.min.js" integrity="sha384-DfXdz2htPH0lsSSs5nCTpuj/zy4C+OGpamoFVy38MVBnE+IbbVYUew+OrCXaRkfj" crossorigin="anonymous"></script>
+		<script src="https://cdn.jsdelivr.net/npm/bootstrap@4.5.3/dist/js/bootstrap.bundle.min.js" integrity="sha384-ho+j7jyWK8fNQe+A12Hb8AhRq26LrZ/JpcUGGOn+Y7RsweNrtN/tE3MoK7ZeZDyx" crossorigin="anonymous"></script>
+		<link href="styles.css" rel="stylesheet">
+		<title>My Webpage</title>
+	</head>
+	<body>
+		<nav class="navbar navbar-expand-lg navbar-light bg-light">
+			<button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarNavAltMarkup" aria-controls="navbarNavAltMarkup" aria-expanded="false" aria-label="Toggle navigation">
+				<span class="navbar-toggler-icon"></span>
+			</button>
+			<div class="collapse navbar-collapse" id="navbarNavAltMarkup">
+				<div class="navbar-nav">
+					<a class="nav-link active" href="index.html">Homepage <span class="sr-only">(current)</span>
+					</a>
+					<a class="nav-link" href="traveler.html">Traveler</a>
+					<a class="nav-link" href="kaeya.html">Kaeya</a>
+					<a class="nav-link" href="amber.html">Amber</a>
+					<a class="nav-link" href="diluc.html">Diluc</a>
+				</div>
+			</div>
+		</nav>
+		<img src="aetherpage.jpeg" class="topbanner" alt="Responsive image">
+		<br>
+		<br>
+		<p class='titlehead'>Traveler</p>
+		<div class='centerall marginbody textbody'> Appearance: <input type="checkbox" id="myCheck" class='checkboxsize'> Story: <input type="checkbox" id="myCheck1" class='checkboxsize'>
+			<hr>
+			<br>
+			<script>
+				document.addEventListener('DOMContentLoaded', function() {
+					document.addEventListener('click', function() {
+						// Get the checkbox
+						var checkBox = document.getElementById("myCheck");
+						// Get the output text
+						var text = document.getElementById("appearance");
+						// If the checkbox is checked, display the output text
+						if (checkBox.checked === true) {
+							text.style.display = "block";
+						} else {
+							text.style.display = "none";
+						}
+					});
+				});
+			</script>
+			<p id='appearance'>Both siblings have bright blond hair, slim body builds, golden-yellow eyes, and fair skin. Their skin is of a light tan when compared to the NPCs of Mondstadt. They adorn a contrasting color palette—the brother with darker clothes and the sister wearing lighter clothes. The two are not identical and differ in their natural features. <br>
+				<br> Aether wears a dark brown breastplate vest baring his midriff along with a white scarf and a cape with golden decals. He has golden plating on his left shoulder and an earring in his left ear. He wears dark brown pants, dark brown gloves and black boots, and has lightly-defined pecs which do not appear in his in-game model. His hair is medium cut with a long braided ponytail.
+			</p>
+			<br>
+			<br>
+			<script>
+				document.addEventListener('DOMContentLoaded', function() {
+					document.addEventListener('click', function() {
+						// Get the checkbox
+						var checkBox = document.getElementById("myCheck1");
+						// Get the output text
+						var text = document.getElementById("story");
+						// If the checkbox is checked, display the output text
+						if (checkBox.checked === true) {
+							text.style.display = "block";
+						} else {
+							text.style.display = "none";
+						}
+					});
+				});
+			</script>
+			<p id='story'>Aether and Lumine were going to leave Teyvat after witnessing the destruction of Khaenri'ah, when suddenly an Unknown God blocked their way. A fight ensued and resulted in one of the twins getting consumed by red cubes from the Unknown God, and the other trapped in a seal with caused them to lose all their powers. Spending an unknown amount of time sealed (the Traveler speculates it had been "years") they eventually woke up. Stranded alone on Teyvat for some time, one day the Traveler accidentally fished out Paimon from a lake, saving her from drowning. <br>
+				<br> Paimon would stay with the Traveler and taught them the Teyvat Language: to her amazement, it only took them two months to become a comfortably conversational speaker. After learning of how they got stranded on Teyvat at the start of the game, Paimon suggests they get in contact with The Seven, in order to help the Traveler look for their lost sibling. In the Archon Quest We Will Be Reunited, the siblings momentarily reunite. However, after having found their lost sibling, the Traveler changes their goal to instead explore Teyvat and uncover the secrets of Khaenri'ah as instructed by their sibling.
+			</p>
+		</div>
+	</body>
+</html>
